@@ -19,5 +19,5 @@ jobs:
   - script: esy install
     displayName: 'esy install'
   - ${{ if ne(parameters.host, 'Windows') }}:
-    - script: 'esy x pkg-config --libs libpng16'
+    - script: 'esy x pkg-config --libs libpng'
       displayName: 'Checking library...'
