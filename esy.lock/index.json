@@ -1,0 +1,37 @@
+{
+  "checksum": "68b68b652876bf7255d2717fba610608",
+  "root": "esy-libpng@link-dev:./package.json",
+  "node": {
+    "esy-zlib@github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3@d41d8cd9": {
+      "id":
+        "esy-zlib@github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3@d41d8cd9",
+      "name": "esy-zlib",
+      "version":
+        "github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-libpng@link-dev:./package.json": {
+      "id": "esy-libpng@link-dev:./package.json",
+      "name": "esy-libpng",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-zlib@github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3@d41d8cd9"
+      ],
+      "devDependencies": []
+    }
+  }
+}
