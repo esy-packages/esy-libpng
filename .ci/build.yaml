@@ -18,8 +18,6 @@ jobs:
       displayName: 'Install esy'
   - script: esy install
     displayName: 'esy install'
-  - ${{ if eq(parameters.host, 'Windows') }}:
-    - script: esy b bash .ci/pkg-config-cygwin.sh
-      displayName: 'Installing pkg-config in cygwin'
-  - script: 'esy x pkg-config --libs libpng-1.6.37'
-    displayName: 'Checking library...'
+  - ${{ if ne(parameters.host, 'Windows') }}:
+    - script: 'esy x pkg-config --libs libpng16'
+      displayName: 'Checking library...'
